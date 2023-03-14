@@ -4,9 +4,20 @@ class Program
     static void Main(string[] args)
     {
         ExercicioAluno.Alunos aluno1 = new ExercicioAluno.Alunos();
-        aluno1.nome = "Fulçano da silva rolim";
-        aluno1.nota1 = 4.3;
-        aluno1.nota2 = 7.8;
+        //nome
+        Console.WriteLine("Digite seu nome:");
+        aluno1.nome = Console.ReadLine();
+
+       //nota 1
+        Console.WriteLine("Digite sua primeira nota:");
+        aluno1.nota1 = double.Parse(Console.ReadLine());
+       
+       //nota 2
+        Console.WriteLine("Digite sua segunda nota:");
+        aluno1.nota2 = double.Parse(Console.ReadLine());
+
+
+        //mensagem
         aluno1.mensagem();
     }
 }
